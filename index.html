@@ -61,7 +61,7 @@
         </section>
         <section id="contact-form">
                 <div class="contact-form">
-                    <form>
+                    <form action="POST" data-netlify="true">
                             <h3>Contact Me:</h3>
                             <p>
                                 <label>Name:</label>
@@ -79,6 +79,7 @@
                                 <label>Message:</label>
                                 <textarea class="" name="message" rows="5" placeholder="Please type in your message..."></textarea>
                             </p>
+                            <div data-netlify-recaptcha="true"></div>
                             <button type="submit" name="submit" class="btn full-width">Submit</button>
                     </form>
                 </div>
