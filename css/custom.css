@@ -155,6 +155,41 @@ form .btn:active {
 footer {
   background-color: #08415c;
   color: #ffffff;
+  /* text-align: center; */
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer p {
+  grid-column: 1/3;
+  grid-row: 1;
   text-align: center;
-  padding: 20px;
+}
+
+footer p i {
+  font-size: 1em;
+  color: #ff0022;
+}
+
+footer a {
+  text-align: end;
+  grid-row: 1;
+}
+
+footer i {
+  font-size: 2em;
+  color: #adb5bd;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #212529;
+}
+
+.fa-envelope:hover,
+.fa-envelope:focus {
+  color: #9199cb;
 }
