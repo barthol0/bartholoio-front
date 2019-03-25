@@ -16,12 +16,6 @@ h1 {
 }
 
 /* GLOBAL */
-.container {
-  max-width: 1170px;
-  margin: auto;
-  overflow: hidden;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -34,6 +28,9 @@ header {
   border-bottom: #db162f 0.1rem solid;
   position: fixed;
   width: 100vw;
+  height: 5vh;
+  top: 0;
+  z-index: 1;
 }
 
 header a {
@@ -83,7 +80,7 @@ header a:hover {
 }
 
 #showcase h1 {
-  margin-top: 150px;
+  margin-top: 5vh;
   margin-bottom: 10px;
 }
 
