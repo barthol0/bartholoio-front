@@ -92,8 +92,11 @@ header a:hover {
   margin-top: 20px;
 }
 
+#overview .container-overview {
+  display: flex;
+  justify-content: center;
+}
 #overview .box {
-  float: left;
   width: 30%;
   padding: 10px;
   text-align: center;
