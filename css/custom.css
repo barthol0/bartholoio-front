@@ -194,3 +194,8 @@ footer i {
 .fa-envelope:focus {
   color: #9199cb;
 }
+
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  color: #006193;
+}
