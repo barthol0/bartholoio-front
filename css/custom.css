@@ -77,12 +77,18 @@ nav ul .current a {
   background-attachment: fixed;
 }
 
+.showcase-container {
+  padding-top: 15vh;
+}
+
 #showcase h1 {
   margin-bottom: 10px;
 }
 
 #showcase p {
   font-size: 1.2rem;
+  width: 50%;
+  margin: auto;
 }
 
 /* OVERVIEW */
