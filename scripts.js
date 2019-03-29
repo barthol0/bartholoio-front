@@ -7,4 +7,10 @@ document.addEventListener("click", e => {
     let modal = e.target.parentElement.parentElement;
     modal.style.display = "none";
   }
+  if (e.target.matches(".modal")) {
+    let modals = document.querySelectorAll(".modal");
+    for (var i = 0, max = modals.length; i < max; i++) {
+      modals[i].style.display = "none";
+    }
+  }
 });
