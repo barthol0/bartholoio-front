@@ -83,10 +83,8 @@ nav ul .current a {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-.showcase-container {
-  padding-top: 15vh;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
 
 .showcase-profile-photo {
@@ -107,7 +105,8 @@ nav ul .current a {
 
 /* OVERVIEW */
 #overview {
-  margin-top: 20px;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 
 #overview .container-overview {
@@ -132,7 +131,7 @@ nav ul .current a {
 .portfolio-container {
   margin: 0 10% auto;
   padding-top: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 #portfolio ul {
@@ -237,8 +236,8 @@ nav ul .current a {
 #contact-form {
   padding-right: 20%;
   padding-left: 20%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
 #contact-form form {
