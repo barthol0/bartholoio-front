@@ -13,4 +13,9 @@ document.addEventListener("click", e => {
       modals[i].style.display = "none";
     }
   }
+  if (e.target.matches(".navbar-toggle")) {
+    let mainNav = document.getElementById("navbar");
+    mainNav.style.display =
+      mainNav.style.display === "block" ? "none" : "block";
+  }
 });

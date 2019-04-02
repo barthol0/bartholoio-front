@@ -31,26 +31,34 @@ header {
   border-bottom: #db162f 0.1rem solid;
   position: fixed;
   width: 100%;
-  height: 50px;
   top: 0;
   z-index: 1;
 }
 
-#branding h1 {
-  font-size: 2rem;
+nav {
+  width: 100%;
 }
 
-nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
+.branding {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.navbar-toggle > * {
+  pointer-events: none;
 }
 
 nav ul li a {
   margin: 0 1rem;
-  position: relative;
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
@@ -63,9 +71,10 @@ nav ul li a:hover {
   border-bottom: #db162f 1px solid;
 }
 
-nav ul {
+.main-nav {
   list-style: none;
-  display: flex;
+  text-align: center;
+  display: none;
 }
 
 nav ul .current a {
@@ -74,7 +83,7 @@ nav ul .current a {
 }
 
 /* SHOWCASE */
-#showcase {
+/* #showcase {
   min-height: 50vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0, 0.2)),
     url(../img/showcase.jpg) no-repeat;
@@ -101,10 +110,10 @@ nav ul .current a {
   font-size: 1.2rem;
   width: 50%;
   margin: auto;
-}
+} */
 
 /* OVERVIEW */
-#overview {
+/* #overview {
   padding-top: 2%;
   padding-bottom: 3%;
 }
@@ -121,10 +130,10 @@ nav ul .current a {
 
 #overview .box img {
   width: 120px;
-}
+} */
 
 /* PORTFOLIO */
-#portfolio {
+/* #portfolio {
   text-align: center;
 }
 
@@ -193,10 +202,10 @@ nav ul .current a {
   justify-items: center;
   background: rgba(0, 0, 0, 0.6);
   cursor: pointer;
-}
+} */
 
 /* MODALS */
-.modal {
+/* .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -230,10 +239,10 @@ nav ul .current a {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 /* CONTACT FORM */
-#contact-form {
+/* #contact-form {
   padding-right: 20%;
   padding-left: 20%;
   padding-top: 2%;
@@ -279,12 +288,11 @@ form .btn:hover {
 
 form .btn:active {
   background: #051b25;
-}
+} */
 /* FOOTER */
-footer {
+/* footer {
   background-color: #08415c;
   color: #ffffff;
-  /* text-align: center; */
   padding: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -327,4 +335,22 @@ footer i {
 .fa-linkedin:hover,
 .fa-linkedin:focus {
   color: #006193;
+} */
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
 }
