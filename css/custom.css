@@ -114,24 +114,26 @@ nav ul .current a {
 }
 
 /* OVERVIEW */
-/* #overview {
+#overview {
   padding-top: 2%;
   padding-bottom: 3%;
 }
 
 #overview .container-overview {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 #overview .box {
-  width: 30%;
+  width: 80%;
   padding: 10px;
   text-align: center;
 }
 
 #overview .box img {
-  width: 120px;
-} */
+  max-width: 100px;
+}
 
 /* PORTFOLIO */
 /* #portfolio {
@@ -375,5 +377,21 @@ footer i {
     font-size: 1.2rem;
     width: 50%;
     margin: auto;
+  }
+
+  #overview .container-overview {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+
+  #overview .box {
+    width: 30%;
+    padding: 10px;
+  }
+
+  #overview .box img {
+    max-width: 120px;
   }
 }
