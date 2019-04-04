@@ -242,7 +242,7 @@ nav ul .current a {
 }
 
 /* CONTACT FORM */
-/* #contact-form {
+#contact-form {
   padding-right: 20%;
   padding-left: 20%;
   padding-top: 2%;
@@ -252,17 +252,13 @@ nav ul .current a {
 #contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 1rem;
 }
 
 #contact-form form h3 {
   grid-column: 1/3;
   text-align: center;
-  font-size: 3em;
-}
-
-#contact-form form label {
-  display: block;
+  font-size: 3rem;
 }
 
 form .full-width {
@@ -273,7 +269,7 @@ form input,
 form textarea,
 form button {
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
   border: #08415c 1px solid;
 }
 
@@ -288,7 +284,7 @@ form .btn:hover {
 
 form .btn:active {
   background: #051b25;
-} */
+}
 /* FOOTER */
 /* footer {
   background-color: #08415c;
