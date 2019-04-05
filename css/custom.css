@@ -248,6 +248,10 @@ nav ul .current a {
   padding-bottom: 5%;
 }
 
+.contact-form {
+  width: 80%;
+  margin: auto;
+}
 #contact-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
