@@ -150,25 +150,24 @@ nav ul .current a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  grid-gap: 50px;
   list-style: none;
 }
 
 .portfolio-card {
   text-align: center;
-  max-width: 350px;
+  max-width: 250px;
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .img-container {
   position: relative;
-  height: 300px;
+  height: 200px;
 }
 
 .portfolio-card img {
-  width: 350px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
 }
 
 .overlay {
