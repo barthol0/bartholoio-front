@@ -30,7 +30,7 @@ header {
   color: #ffffff;
   border-bottom: #db162f 0.1rem solid;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 1;
 }
@@ -258,8 +258,7 @@ nav ul .current a {
   grid-gap: 1rem;
 }
 
-#contact-form form h3 {
-  grid-column: 1/3;
+#contact-form h3 {
   text-align: center;
   font-size: 3rem;
 }
