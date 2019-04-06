@@ -240,7 +240,7 @@ nav ul .current a {
 }
 
 .project-features {
-  width: 20%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -254,7 +254,8 @@ nav ul .current a {
   background: none;
 }
 
-.portfolio-single .fa-github {
+.portfolio-single .fa-github,
+.portfolio-single .fa-readme {
   color: #212529;
 }
 
@@ -404,6 +405,13 @@ footer .social-icons {
   #overview .box img {
     max-width: 120px;
   }
+
+  .project-features {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #contact-form {
     padding-right: 10%;
     padding-left: 10%;
