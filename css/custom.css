@@ -150,7 +150,7 @@ nav ul .current a {
   padding-bottom: 3%;
 }
 
-#portfolio ul {
+#portfolio .portfolio-cards-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -158,20 +158,20 @@ nav ul .current a {
 }
 
 .portfolio-card {
-  text-align: center;
   max-width: 250px;
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .img-container {
+  display: flex;
   position: relative;
   height: 200px;
 }
 
-.portfolio-card img {
+.portfolio-card .portfolio-img-preview {
+  align-self: center;
   width: 250px;
-  height: 200px;
 }
 
 .overlay {
@@ -230,6 +230,34 @@ nav ul .current a {
   width: 80%;
 }
 
+.portfolio-img-large {
+  max-width: 500px;
+  margin: auto;
+}
+
+.portfolio-img-large img {
+  width: 100%;
+}
+
+.project-features {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-features ul {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.portfolio-single i {
+  background: none;
+}
+
+.portfolio-single .fa-github {
+  color: #212529;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -267,16 +295,17 @@ form button {
   border: #08415c 1px solid;
 }
 
-form .btn {
+.btn {
   background: #08415c;
   color: #ffffff;
+  border: #063044 1px solid;
 }
 
-form .btn:hover {
+.btn:hover {
   background: #063044;
 }
 
-form .btn:active {
+.btn:active {
   background: #051b25;
 }
 
@@ -299,7 +328,7 @@ footer .social-icons {
   margin-top: 10px;
 }
 
-footer i {
+.social-icons i {
   font-size: 2em;
   color: #adb5bd;
   padding-left: 0.2em;
