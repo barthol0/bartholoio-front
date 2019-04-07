@@ -248,6 +248,7 @@ nav ul .current a {
 .project-features ul {
   text-align: left;
   list-style-position: inside;
+  list-style-type: disc;
 }
 
 .portfolio-single i {
