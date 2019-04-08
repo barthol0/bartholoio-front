@@ -186,26 +186,25 @@ nav ul .current a {
   cursor: pointer;
 }
 
-/* OVERVIEW */
-#overview {
+/* ABOUT */
+#about {
   padding-top: 2%;
   padding-bottom: 3%;
-}
-
-#overview .container-overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#overview .box {
-  width: 80%;
-  padding: 10px;
   text-align: center;
 }
 
-#overview .box img {
-  max-width: 100px;
+#about .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+.about-container img {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* PORTFOLIO */
@@ -461,20 +460,17 @@ footer .social-icons {
     padding: 20px;
   }
 
-  #overview .container-overview {
+  #about .about-container {
     flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
+    max-width: 60%;
   }
 
-  #overview .box {
-    width: 30%;
-    padding: 10px;
+  .about-container img {
+    margin-right: 20px;
   }
 
-  #overview .box img {
-    max-width: 120px;
+  .about-container p {
+    text-align: left;
   }
 
   .project-features {
