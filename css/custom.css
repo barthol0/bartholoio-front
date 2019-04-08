@@ -91,16 +91,17 @@ nav ul .current a {
 
 /* SHOWCASE */
 #showcase {
-  min-height: 50vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0), rgba(0, 0, 0, 0.2)),
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
     url(../img/showcase.jpg) no-repeat;
   text-align: center;
   color: #ffffff;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase-profile-photo {
@@ -109,14 +110,65 @@ nav ul .current a {
   height: 100px;
 }
 
-#showcase h1 {
-  margin-bottom: 10px;
+.portfolio-btn {
+  width: 200px;
+  padding: 20px;
+  background: none;
+  color: #f4f4f4;
+  border: #f4f4f4 2px solid;
+  font-size: 1.2rem;
+  display: block;
+  margin: 20px auto;
+  transition: 0.5s;
 }
 
-#showcase p {
-  font-size: 1rem;
-  width: 80%;
-  margin: auto;
+.portfolio-btn:hover {
+  background: #f4f4f4;
+  color: #000;
+  cursor: pointer;
+}
+
+.showcase-buttons {
+  margin-top: 50px;
+}
+
+.showcase-buttons i {
+  border: #f4f4f4 3px solid;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px;
+}
+
+.showcase-buttons .fa-github {
+  color: #aaaaaa;
+  transition: 0.5s;
+}
+
+.showcase-buttons .fa-linkedin {
+  color: #006193;
+  transition: 0.5s;
+}
+
+.showcase-buttons .fa-envelope {
+  color: #9199cb;
+  transition: 0.5s;
+}
+
+.showcase-buttons .fa-github:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  cursor: pointer;
+}
+
+.showcase-buttons .fa-linkedin:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.showcase-buttons .fa-envelope:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 /* OVERVIEW */
@@ -339,18 +391,18 @@ footer .social-icons {
   padding-right: 0.2em;
 }
 
-.fa-github:hover,
-.fa-github:focus {
+.social-icons .fa-github:hover,
+.social-icons .fa-github:focus {
   color: #212529;
 }
 
-.fa-envelope:hover,
-.fa-envelope:focus {
+.social-icons .fa-envelope:hover,
+.social-icons .fa-envelope:focus {
   color: #9199cb;
 }
 
-.fa-linkedin:hover,
-.fa-linkedin:focus {
+.social-icons .fa-linkedin:hover,
+.social-icons .fa-linkedin:focus {
   color: #006193;
 }
 
@@ -378,19 +430,8 @@ footer .social-icons {
   }
 
   .showcase-profile-photo {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
-  }
-
-  #showcase h1 {
-    margin-bottom: 10px;
-  }
-
-  #showcase p {
-    font-size: 1.2rem;
-    width: 50%;
-    margin: auto;
   }
 
   #overview .container-overview {
