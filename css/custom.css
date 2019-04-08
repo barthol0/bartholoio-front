@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
 /* GLOBAL */
 * {
   box-sizing: border-box;
@@ -108,6 +110,10 @@ nav ul .current a {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+#showcase h1 {
+  font-family: "Quicksand", cursive;
 }
 
 .portfolio-btn {
