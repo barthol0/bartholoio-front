@@ -498,6 +498,12 @@ footer .social-icons {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  #contact-form {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
 /* ANIMATIONS */
 @keyframes blink {
   50% {
