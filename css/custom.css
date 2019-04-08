@@ -50,8 +50,7 @@ nav {
 .branding {
   color: #ffffff;
   text-decoration: none;
-  font-size: 2rem;
-  margin-left: 20px;
+  font-size: 1.5rem;
   display: inline-block;
   font-family: "Source Code Pro", monospace;
 }
@@ -59,8 +58,8 @@ nav {
 .navbar-toggle {
   cursor: pointer;
   position: absolute;
-  right: 30px;
-  top: 12px;
+  right: 20px;
+  top: 10px;
 }
 .navbar-toggle > * {
   pointer-events: none;
