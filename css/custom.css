@@ -18,6 +18,11 @@ body {
 h1 {
   font-size: 3rem;
 }
+
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -113,21 +118,26 @@ nav ul .current a {
 
 #showcase h1 {
   font-family: "Quicksand", cursive;
+  font-size: 2rem;
 }
 
-.portfolio-btn {
-  width: 200px;
-  padding: 20px;
+#showcase h2 {
+  font-size: 1.5rem;
+}
+
+#showcase .portfolio-btn {
+  width: 150px;
+  padding: 15px;
   background: none;
   color: #f4f4f4;
   border: #f4f4f4 2px solid;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: block;
   margin: 20px auto;
   transition: 0.5s;
 }
 
-.portfolio-btn:hover {
+#showcase .portfolio-btn:hover {
   background: #f4f4f4;
   color: #000;
   cursor: pointer;
@@ -429,7 +439,6 @@ footer .social-icons {
   }
 
   #showcase {
-    min-height: 50vh;
     padding-top: 10vh;
     padding-bottom: 5vh;
   }
@@ -437,6 +446,19 @@ footer .social-icons {
   .showcase-profile-photo {
     width: 150px;
     height: 150px;
+  }
+
+  #showcase h1 {
+    font-size: 3rem;
+  }
+
+  #showcase h2 {
+    font-size: 2rem;
+  }
+
+  #showcase .portfolio-btn {
+    width: 200px;
+    padding: 20px;
   }
 
   #overview .container-overview {
