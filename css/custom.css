@@ -207,6 +207,11 @@ nav ul .current a {
   margin-bottom: 20px;
 }
 
+#skills {
+  text-align: center;
+  padding: 2%;
+}
+
 .tech-stack {
   display: flex;
   flex-flow: row;
