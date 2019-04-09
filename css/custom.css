@@ -207,6 +207,24 @@ nav ul .current a {
   margin-bottom: 20px;
 }
 
+.tech-stack {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.tech-stack .logo {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.tech-stack img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
 /* PORTFOLIO */
 #portfolio {
   text-align: center;
@@ -476,6 +494,10 @@ footer .social-icons {
 
   .about-container p {
     text-align: left;
+  }
+
+  .tech-stack {
+    width: 80%;
   }
 
   .project-features {
