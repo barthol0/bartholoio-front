@@ -307,10 +307,15 @@ nav ul .current a {
   width: 100%;
 }
 
+.portfolio-project-name {
+  white-space: nowrap;
+}
+
 .project-features {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  white-space: nowrap;
 }
 
 .project-features ul {
