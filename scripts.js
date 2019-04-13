@@ -1,20 +1,18 @@
 document.addEventListener("click", e => {
   if (e.target.matches(".open-modal-btn")) {
-    let modal = e.target.parentElement.parentElement.previousElementSibling;
+    const modal = e.target.parentElement.parentElement.previousElementSibling;
     modal.style.display = "block";
   }
   if (e.target.matches(".close")) {
-    let modal = e.target.parentElement.parentElement;
+    const modal = e.target.parentElement.parentElement;
     modal.style.display = "none";
   }
   if (e.target.matches(".modal")) {
-    let modals = document.querySelectorAll(".modal");
-    for (var i = 0, max = modals.length; i < max; i++) {
-      modals[i].style.display = "none";
-    }
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => (modal.style.display = "none"));
   }
   if (e.target.matches(".navbar-toggle")) {
-    let mainNav = document.getElementById("navbar");
+    const mainNav = document.getElementById("navbar");
     mainNav.style.display =
       mainNav.style.display === "block" ? "none" : "block";
   }
