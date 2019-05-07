@@ -4,16 +4,21 @@ document.addEventListener("click", e => {
     modal.style.display = "block";
   }
   if (e.target.matches(".close")) {
-    const modal = e.target.parentElement.parentElement;
-    modal.style.display = "none";
+    closeModals();
   }
   if (e.target.matches(".modal")) {
-    const modals = document.querySelectorAll(".modal");
-    modals.forEach(modal => (modal.style.display = "none"));
-  }
-  if (e.target.matches(".navbar-toggle")) {
-    const mainNav = document.getElementById("navbar");
-    mainNav.style.display =
-      mainNav.style.display === "block" ? "none" : "block";
+    closeModals();
   }
 });
+
+const navbarToggle = document.querySelector(".navbar-toggle");
+
+navbarToggle.addEventListener("click", () => {
+  const mainNav = document.querySelector("#navbar");
+  mainNav.style.display = mainNav.style.display === "block" ? "none" : "block";
+});
+
+function closeModals() {
+  const modals = document.querySelectorAll(".modal");
+  modals.forEach(modal => (modal.style.display = "none"));
+}
