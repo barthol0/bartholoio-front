@@ -67,7 +67,8 @@ nav {
   right: 20px;
   top: 10px;
 }
-.navbar-toggle > * {
+
+.navbar-toggle>* {
   pointer-events: none;
 }
 
@@ -76,7 +77,7 @@ nav ul li a {
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 1rem;
 }
 
@@ -516,6 +517,7 @@ footer .social-icons {
     padding-right: 10%;
     padding-left: 10%;
   }
+
   #contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -533,6 +535,7 @@ footer .social-icons {
     padding-left: 20%;
   }
 }
+
 /* ANIMATIONS */
 @keyframes blink {
   50% {
